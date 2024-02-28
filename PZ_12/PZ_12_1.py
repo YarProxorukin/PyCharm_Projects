@@ -10,8 +10,7 @@ print(f'Уникальные элементы: {unique_elements}')
 print(f'Количество уникальных элементов: {len(unique_elements)}')
 
 
-def five(num):
-    return num * 2 if num > 5 else num
+five = lambda num: num * 2 if num > 5 else num
 
 
 new_spisok = list(map(five, unique_elements))
