@@ -7,10 +7,10 @@ matrix = [
     [7, 8, 9]
 ]
 
-column_index = int(input("Введите номер столбца (от 0 до 2): "))
+number_column = int(input("Введите номер столбца (от 0 до 2): "))
 
 for row in matrix:
-    row[column_index] *= 2
+    row[number_column] *= 2
 
 for row in matrix:
     print(row)
