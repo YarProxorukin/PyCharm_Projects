@@ -55,6 +55,7 @@ with sqlite3.connect('salon.db') as connect:
     cursor = connect.cursor()
     cursor.execute("UPDATE services SET fio_master = 'Иванов Иван Иванович' WHERE haircut_name = 'Полубокс'")
     cursor.execute("UPDATE services SET price = 8000 WHERE fio_master = 'Меркель Полина Адольфовна' AND fio_client = 'Суворова Алина Максимовна'")
+    cursor.execute("UPDATE services SET fio_client = 'Джонсон Борис Геннадьевич' WHERE price = 900")
     connect.commit()
 
 with sqlite3.connect('salon.db') as connect:
